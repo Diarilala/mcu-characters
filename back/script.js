@@ -36,10 +36,18 @@ app.post("/characters", (req, res) => {
         const newCharacter = {
             ...req.body,
         };
+        const handleSameId = () =>{
+            for(character in characters){
+                if(characters[character].id === newCharacter.id){
+                    res.status(400).json({error: "Character Already Exist"});
+                }
+            }
+        }
         if (!newCharacter.name || !newCharacter.id || !newCharacter.realName || !newCharacter.universe) {
             res.status(400).json({error: "Missing Information"});
+        } else {
+            handleSameId();
         }
-
         characters.push(newCharacter);
         writeData(data);
         res.status(201).json({message: "Characters Added Successfully"});
