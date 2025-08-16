@@ -58,7 +58,7 @@ export default function Characters() {
   };
 
   return (
-    <div>
+    <div className='bg-white text-black h-[500px] rounded-2xl flex flex-col gap-3'>
       <h1>MCU Characters</h1>
       
       {/* Add Character Form */}
@@ -83,17 +83,19 @@ export default function Characters() {
           value={newCharacter.universe}
           onChange={(e) => setNewCharacter({...newCharacter, universe: e.target.value})}
         />
-        <button onClick={handleAddCharacter}>Add Character</button>
+        <button onClick={handleAddCharacter} className='text-white'>Add Character</button>
       </div>
 
       {/* Characters List */}
-      <ul>
+      <ul className='overflow-y-scroll bg-amber-200 flex flex-col rounded-2xl'>
         {characters.map(character => (
-          <li key={character.id}>
+          <li key={character.id} className='my-2 flex justify-between px-4'>
 
             {character.id} {character.name} {character.lastname} ({character.universe})
-            <button onClick={() => handleUpdateCharacter(character.id)}>Update</button>
-            <button onClick={() => handleDeleteCharacter(character.id)}>Delete</button>
+            <div className='flex gap-2'>
+                <button onClick={() => handleUpdateCharacter(character.id)} className='text-white'>Update</button>
+            <button onClick={() => handleDeleteCharacter(character.id)}className='text-white'>Delete</button>
+            </div>
           </li>
         ))}
       </ul>

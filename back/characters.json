@@ -5,6 +5,12 @@
       "lastname": "Peter Parker",
       "universe": "Earth-616",
       "id": "1"
+    },
+    {
+      "name": "Iron-man",
+      "lastname": "Tony Stark",
+      "universe": "Earth-616",
+      "id": "2"
     }
   ]
 }
