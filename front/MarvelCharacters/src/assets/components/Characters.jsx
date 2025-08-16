@@ -91,9 +91,9 @@ export default function Characters() {
       </div>
 
       {/* Characters List */}
-      <ul className='overflow-y-scroll bg-amber-200 flex flex-col rounded-2xl'>
+      <ul className='overflow-y-scroll flex flex-col rounded-2xl'>
         {characters.map(character => (
-          <li key={character.id} className='my-2 flex justify-between px-4 items-center'>
+          <li key={character.id} className='my-2 mx-3 flex justify-between px-4 py-2 items-center outline bg-blue-300 rounded-xl '>
 
             {character.id} {character.name} {character.lastname} ({character.universe})
             <div className='flex gap-2'>

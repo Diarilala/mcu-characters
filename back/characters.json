@@ -11,6 +11,36 @@
       "lastname": "Tony Stark",
       "universe": "Earth-616",
       "id": "2"
+    },
+    {
+      "name": "Captain America",
+      "lastname": "Steve Rogers",
+      "universe": "Earth-616",
+      "id": "3"
+    },
+    {
+      "name": "The Black Widow",
+      "lastname": "Natasha Romanoff",
+      "universe": "Earth-616",
+      "id": "4"
+    },
+    {
+      "name": "The Hulk",
+      "lastname": "Bruce Banner",
+      "universe": "Earth-616",
+      "id": "5"
+    },
+    {
+      "name": "Thor",
+      "lastname": "Thod Odinson",
+      "universe": "Earth-616",
+      "id": "6"
+    },
+    {
+      "name": "Ant-man",
+      "lastname": "Scott Lang",
+      "universe": "Earth-616",
+      "id": "7"
     }
   ]
 }
