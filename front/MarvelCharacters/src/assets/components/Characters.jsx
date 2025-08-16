@@ -62,23 +62,27 @@ export default function Characters() {
       <h1>MCU Characters</h1>
       
       {/* Add Character Form */}
-      <div className='px-3'>
+      <div className='px-3 flex gap-1'>
         <input
+            className='rounded-xl px-2'
             placeholder="Id"
             value={newCharacter.id}
             onChange={(e) => setNewCharacter({...newCharacter, id: e.target.value})}
              />
         <input
+        className='rounded-xl px-2'
           placeholder="Name"
           value={newCharacter.name}
           onChange={(e) => setNewCharacter({...newCharacter, name: e.target.value})}
         />
         <input
+        className='rounded-xl px-2'
           placeholder="Real Name"
           value={newCharacter.lastname}
           onChange={(e) => setNewCharacter({...newCharacter, lastname: e.target.value})}
         />
         <input
+        className='rounded-xl px-2'
           placeholder="Universe"
           value={newCharacter.universe}
           onChange={(e) => setNewCharacter({...newCharacter, universe: e.target.value})}
