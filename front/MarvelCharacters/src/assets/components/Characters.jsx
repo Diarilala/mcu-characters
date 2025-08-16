@@ -85,7 +85,8 @@ export default function Characters() {
       <ul>
         {characters.map(character => (
           <li key={character.id}>
-            {character.name} {character.lastname} ({character.universe})
+
+            {character.id} {character.name} {character.lastname} ({character.universe})
             <button onClick={() => handleUpdateCharacter(character.id)}>Update</button>
             <button onClick={() => handleDeleteCharacter(character.id)}>Delete</button>
           </li>
