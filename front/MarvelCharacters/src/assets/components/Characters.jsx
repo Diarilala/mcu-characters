@@ -62,8 +62,8 @@ export default function Characters() {
       <h1>MCU Characters</h1>
       
       {/* Add Character Form */}
-      <div>
-        <input 
+      <div className='px-3'>
+        <input
             placeholder="Id"
             value={newCharacter.id}
             onChange={(e) => setNewCharacter({...newCharacter, id: e.target.value})}
