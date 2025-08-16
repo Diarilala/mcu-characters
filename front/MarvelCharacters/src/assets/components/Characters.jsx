@@ -63,6 +63,11 @@ export default function Characters() {
       
       {/* Add Character Form */}
       <div>
+        <input 
+            placeholder="Id"
+            value={newCharacter.id}
+            onChange={(e) => setNewCharacter({...newCharacter, id: e.target.value})}
+             />
         <input
           placeholder="Name"
           value={newCharacter.name}
